@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Claim>
+
+<table style="width:100%">
+    <tr>
+        <th>Claim Type</th>
+        <th>Claim Value</th>
+    </tr>
+    @foreach (var claim in Model)
+    {
+        <tr>
+            <td>@claim.Type</td>
+            <td style="word-break:break-all">@claim.Value</td>
+        </tr>
+    }
+</table>

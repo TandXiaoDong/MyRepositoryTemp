@@ -1,0 +1,53 @@
+version: "3.6"
+
+
+services:
+
+  traefik:
+    build: 
+      context: ./1-src/
+      dockerfile: web.reverse-proxy.dockerfile
+    restart: on-failure
+    command: --api
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  oidc-server.test:
+    build:
+      context: ./1-src/
+      dockerfile: web.oidc.server.ids4.dockerfile
+
+  oidc-client-hybrid.test:
+    build:
+      context: ./1-src/
+      dockerfile: web.oidc.client.hybrid.dockerfile
+
+  oidc-client-js.test:
+    build:
+      context: ./1-src/
+      dockerfile: web.oidc.client.js.dockerfile
+
+  oauth2-client-aspnetcore.test:
+    build:
+      context: ./1-src/
+      dockerfile: web.oauth2.client.aspnetcore.dockerfile
+
+  oauth2-resources-aspnetcore.test:
+    build:
+      context: ./1-src/
+      dockerfile: web.oauth2.resources.aspnetcore.dockerfile
+  
+  oauth2-resources-nodejs.test:
+    build:
+      context: ./1-src/
+      dockerfile: web.oauth2.resources.nodejs.dockerfile
+
+  oauth2-resources-java.test:
+    build:
+      context: ./1-src/
+      dockerfile: web.oauth2.resources.java.dockerfile
+    depends_on:
+      - oidc-server.test

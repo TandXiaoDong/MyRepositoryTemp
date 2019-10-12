@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpMessageTest", "HttpMessageTest\HttpMessageTest.csproj", "{54CF2752-FDCF-440A-BB73-8467EED7A32B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonUtils", "..\..\FigKey\CommonUtils\CommonLibrary\CommonUtils\CommonUtils\CommonUtils.csproj", "{EBFCA1B5-23F1-4F94-928A-DB1A7B98EED6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54CF2752-FDCF-440A-BB73-8467EED7A32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CF2752-FDCF-440A-BB73-8467EED7A32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CF2752-FDCF-440A-BB73-8467EED7A32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CF2752-FDCF-440A-BB73-8467EED7A32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFCA1B5-23F1-4F94-928A-DB1A7B98EED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFCA1B5-23F1-4F94-928A-DB1A7B98EED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFCA1B5-23F1-4F94-928A-DB1A7B98EED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFCA1B5-23F1-4F94-928A-DB1A7B98EED6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B7749BF-36B7-4B34-9F03-B6AAF9CC206F}
+	EndGlobalSection
+EndGlobal

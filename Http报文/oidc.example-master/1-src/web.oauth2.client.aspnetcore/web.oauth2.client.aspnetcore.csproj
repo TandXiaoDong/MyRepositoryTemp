@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Web.OAuth2.Client.AspNetCore</AssemblyName>
+    <RootNamespace>ClientSite</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\_shared\GlobalConfig.cs" Link="GlobalConfig.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\oauth2.github.aspnetcore\oauth2.github.aspnetcore.csproj" />
+    <ProjectReference Include="..\oauth2.qqconnect.aspnetcore\oauth2.qqconnect.aspnetcore.csproj" />
+  </ItemGroup>
+
+</Project>
